@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kumo Craft Bakery | Cloud-Soft Chiffon Cakes Sydney</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
+  <meta name="description" content="Kumo Craft Bakery — extremely soft Japanese chiffon cakes and custom celebration cakes in Sydney. Order online, download our menu brochure and cake care guide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================
+       HEADER
+       ============================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-cloud">☁️</span>
+        <span>
+          Kumo Craft Bakery
+          <span class="logo-sub">Handcrafted Cloud Cakes · Sydney</span>
+        </span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#care">Cake Care</a></li>
+          <li><a href="#brochure">Menu</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================
+       HERO
+       ============================ -->
+  <section class="hero">
+    <p class="hero-eyebrow">♡ &nbsp; @kumocraftbakery &nbsp; ♡</p>
+    <h1>Extremely Soft<br><em>Chiffon Cakes</em></h1>
+    <p class="hero-desc">
+      Handcrafted with a Japanese cloud sponge technique — light as air, perfectly balanced, and beautifully bespoke for every celebration.
+    </p>
+    <div class="hero-actions">
+      <a href="#gallery" class="btn btn-gold">
+        <i class="fa-solid fa-images"></i> View Our Cakes
+      </a>
+      <button class="btn btn-outline" onclick="openBrochureModal()">
+        <i class="fa-solid fa-book-open"></i> Open Menu Brochure
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================
+       GALLERY
+       ============================ -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">♡ &nbsp; Our Creations &nbsp; ♡</span>
+        <h2 class="section-title">Bespoke Celebration Cakes</h2>
+        <p class="section-subtitle">Every cake is made fresh to order — custom themes, flavours, and hand-piped decorations.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="assets/images/IMG-20260715-WA0018.jpg" alt="Elsa Princess Rosette Chiffon Cake">
+          <div class="gallery-caption">
+            <span class="gallery-caption-tag">Custom</span><br>
+            Elsa Princess Rosette Cake
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/IMG-20260715-WA0024.jpg" alt="Ocean Coral & Shell Birthday Cake">
+          <div class="gallery-caption">
+            <span class="gallery-caption-tag">Custom</span><br>
+            Ocean Coral & Shell Cake
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/IMG-20260715-WA0026.jpg" alt="Under the Sea 2-Tier Cake">
+          <div class="gallery-caption">
+            <span class="gallery-caption-tag">2-Tier</span><br>
+            Under-the-Sea Kingdom Cake
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/IMG-20260715-WA0025.jpg" alt="Magical Pastel Unicorn Cake">
+          <div class="gallery-caption">
+            <span class="gallery-caption-tag">Custom</span><br>
+            Pastel Unicorn Chiffon Cake
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       QUICK LINKS: CARE GUIDE + ORDER FORM
+       ============================ -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="quick-links-row">
+
+        <!-- Cake Care Instructions Download -->
+        <div class="quick-link-card">
+          <div class="qlc-icon">🛡️</div>
+          <div class="qlc-text">
+            <h4>Cake Care Instructions</h4>
+            <p>Transport and storage guide — keep your cake safe, cool, and pristine all the way home.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+              <a href="#care" class="btn btn-navy" style="font-size:0.85rem; padding:10px 20px;">
+                <i class="fa-solid fa-eye"></i> View Guide
+              </a>
+              <button class="btn btn-navy" style="font-size:0.85rem; padding:10px 20px; background:var(--gold); color:var(--navy);" onclick="downloadCareGuide()">
+                <i class="fa-solid fa-download"></i> Download Card
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Form -->
+        <div class="quick-link-card">
+          <div class="qlc-icon">🎂</div>
+          <div class="qlc-text">
+            <h4>Place a Custom Order</h4>
+            <p>Fill out our order form to request a fully custom cake — theme, size, flavour, inscription, and delivery date.</p>
+            <a href="https://forms.gle/afgwnnXkwxGztrP8A" target="_blank" class="btn btn-gold" style="font-size:0.85rem; padding:10px 20px;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Order Form
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CAKE CARE INSTRUCTIONS
+       ============================ -->
+  <section class="section" id="care">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">♡ &nbsp; Care Instructions &nbsp; ♡</span>
+        <h2 class="section-title">How to Handle Your Cake</h2>
+        <p class="section-subtitle">Because our chiffon cakes use 100% natural fresh cream with no stabilisers, please follow these five simple rules.</p>
+      </div>
+
+      <div class="care-card">
+
+        <!-- Card top — matches the official card's header -->
+        <div class="care-card-top">
+          <div style="margin-bottom:12px;">
+            <span style="font-size:2rem; display:block; margin-bottom:6px;">☁️</span>
+            <div class="care-card-logo">
+              Kumo
+              <span>Craft Bakery</span>
+            </div>
+          </div>
+          <div class="divider" style="margin:14px 0;">
+            <div class="divider-line" style="background:rgba(196,154,69,0.5);"></div>
+            <span class="divider-heart">♡</span>
+            <div class="divider-line" style="background:rgba(196,154,69,0.5);"></div>
+          </div>
+          <div class="care-title-block">
+            <div class="care-word-cake">CAKE CARE</div>
+            <div class="care-word-instructions">instructions</div>
+          </div>
+        </div>
+
+        <!-- Rules -->
+        <div class="care-card-body">
+
+          <div class="care-rule">
+            <div class="care-rule-icon">🚗</div>
+            <div class="care-rule-body">
+              <h5>Keep Flat</h5>
+              <p>Car floor only (not the seat). Place the box on a completely flat, level surface.</p>
+            </div>
+          </div>
+
+          <div class="care-rule">
+            <div class="care-rule-icon">🏎️</div>
+            <div class="care-rule-body">
+              <h5>Drive Carefully</h5>
+              <p>Go slow. Avoid sudden brakes & sharp turns throughout the journey.</p>
+            </div>
+          </div>
+
+          <div class="care-rule">
+            <div class="care-rule-icon">❄️</div>
+            <div class="care-rule-body">
+              <h5>Keep Cool</h5>
+              <p>A/C on full cool. Position the cake in the footwell area with direct cold airflow.</p>
+            </div>
+          </div>
+
+          <div class="care-rule">
+            <div class="care-rule-icon">🏠</div>
+            <div class="care-rule-body">
+              <h5>After Pickup</h5>
+              <p>Go straight home and refrigerate immediately (2°C – 5°C). Enjoy within 2–3 days.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Transportation notice box — matches the card's bordered notice -->
+        <div class="care-notice">
+          <div class="care-notice-icon">🛡️</div>
+          <div class="care-notice-body">
+            <h6>Transportation Notice</h6>
+            <p>Once the cake leaves my hands, I'm unable to take responsibility for damages during transportation. Thank you for understanding!</p>
+          </div>
+        </div>
+
+        <!-- Card footer -->
+        <div class="care-card-foot">
+          <div class="divider" style="margin-bottom:18px;">
+            <div class="divider-line"></div>
+            <span class="divider-heart">♡</span>
+            <div class="divider-line"></div>
+          </div>
+          <p class="care-thankyou">Thank you ♡</p>
+          <p class="care-handle" style="margin-bottom:20px;">♡ @kumocraftbakery ♡</p>
+          <button class="care-download-btn" onclick="downloadCareGuide()">
+            <i class="fa-solid fa-download"></i> Download Instructions Card
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       MENU BROCHURE
+       ============================ -->
+  <section class="section section-navy" id="brochure">
+    <div class="container">
+      <div class="brochure-layout">
+
+        <div class="brochure-text">
+          <span class="section-eyebrow">♡ &nbsp; Full Bakery Menu &nbsp; ♡</span>
+          <h3>Everything We Bake at Kumo Craft</h3>
+          <p>From bespoke two-tier celebration cakes to signature cloud chiffons and Korean bento gift sets — browse the full menu below, or download a printable copy.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button class="btn btn-gold" onclick="openBrochureModal()">
+              <i class="fa-solid fa-book-open"></i> Open Full Brochure
+            </button>
+            <button class="btn btn-outline" onclick="downloadBrochure()">
+              <i class="fa-solid fa-file-arrow-down"></i> Download (PDF)
+            </button>
+          </div>
+        </div>
+
+        <!-- Brochure preview card -->
+        <div class="brochure-preview-card">
+          <div class="brochure-preview-top">
+            <div class="cloud">☁️</div>
+            <h4>KUMO CRAFT BAKERY</h4>
+            <p>Our Signature Menu</p>
+          </div>
+          <div class="brochure-preview-body">
+
+            <div class="brochure-preview-category">🎨 Custom Celebration Cakes</div>
+            <div class="brochure-preview-row"><span>Elsa Princess Rosette Chiffon</span><strong>$85</strong></div>
+            <div class="brochure-preview-row"><span>Ocean Coral & Shell Cake</span><strong>$88</strong></div>
+            <div class="brochure-preview-row"><span>2-Tier Under-the-Sea Kingdom</span><strong>$135</strong></div>
+            <div class="brochure-preview-row"><span>Pastel Unicorn Chiffon Cake</span><strong>$78</strong></div>
+
+            <div class="brochure-preview-category" style="margin-top:18px;">☁️ Signature Cloud Chiffons</div>
+            <div class="brochure-preview-row"><span>Strawberry Cloud Chiffon</span><strong>$66</strong></div>
+            <div class="brochure-preview-row"><span>Uji Matcha & Yuzu Curd</span><strong>$68</strong></div>
+            <div class="brochure-preview-row"><span>Pistachio Raspberry Bloom</span><strong>$72</strong></div>
+            <div class="brochure-preview-row"><span>Rose & Lychee Cloud Chiffon</span><strong>$67</strong></div>
+
+            <div class="brochure-preview-category" style="margin-top:18px;">🎁 Extras</div>
+            <div class="brochure-preview-row"><span>Basque Burnt Cheesecake</span><strong>$64</strong></div>
+            <div class="brochure-preview-row"><span>Korean Mini Bento Set (×3)</span><strong>$48</strong></div>
+
+          </div>
+          <div class="brochure-preview-foot">
+            <button class="btn btn-gold" onclick="openBrochureModal()" style="font-size:0.83rem; padding:10px 22px;">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> View Full Brochure
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       REVIEWS
+       ============================ -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">♡ &nbsp; Customer Love &nbsp; ♡</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            The Ocean IRA cake was the showstopper of my daughter's birthday! The chiffon sponge was impossibly light and the cake care card made transporting it so stress-free.
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">SC</div>
+            <div>
+              <div class="review-name">Sarah C. · Ryde</div>
+              <div class="review-sub">Ocean Coral & Shell Cake</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            The 2-Tier Under-the-Sea Devansh cake blew everyone away. The detail on the whale and sea creatures was stunning — and the chiffon inside was pure cloud!
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">ML</div>
+            <div>
+              <div class="review-name">Michael L. · Barangaroo</div>
+              <div class="review-sub">2-Tier Under-the-Sea Cake</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">
+            The Elsa Princess Rosette cake was everything we dreamed of — perfect piping, light sweetness, and it arrived in perfect condition thanks to the care instructions!
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">JT</div>
+            <div>
+              <div class="review-name">Jessica T. · Surry Hills</div>
+              <div class="review-sub">Elsa Princess Rosette Cake</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+       ============================ -->
+  <footer class="site-footer">
+    <div class="footer-logo">KUMO CRAFT BAKERY</div>
+    <div class="footer-sub">Handcrafted Cloud Cakes · Sydney</div>
+    <div class="footer-divider"></div>
+    <nav class="footer-links-row">
+      <a href="#gallery">Gallery</a>
+      <a href="#care">Cake Care</a>
+      <a href="#brochure">Menu Brochure</a>
+      <a href="#reviews">Reviews</a>
+      <a href="https://forms.gle/afgwnnXkwxGztrP8A" target="_blank">Order Form</a>
+    </nav>
+    <p style="font-size:0.82rem; color:var(--gold); letter-spacing:1.5px; margin-bottom:12px;">♡ @kumocraftbakery ♡</p>
+    <p class="footer-copy">© 2026 Kumo Craft Bakery · All Rights Reserved <span class="footer-heart">♡</span></p>
+  </footer>
+
+  <!-- ============================
+       BROCHURE MODAL
+       ============================ -->
+  <div class="modal-overlay" id="brochureModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeBrochureModal()">✕</button>
+
+      <div style="background:var(--navy); text-align:center; padding:32px 24px 24px; border-radius: 24px 24px 0 0;">
+        <div style="font-size:2.2rem; margin-bottom:8px;">☁️</div>
+        <div style="font-family:var(--font-serif); font-size:1.5rem; letter-spacing:2px; color:#fff; font-weight:600;">KUMO CRAFT BAKERY</div>
+        <div style="font-size:0.72rem; letter-spacing:3.5px; text-transform:uppercase; color:var(--gold); margin-top:4px;">Full Bakery Menu · Sydney</div>
+      </div>
+
+      <div style="padding:32px 32px 0;">
+        <div class="brochure-preview-category">🎨 Custom Celebration Cakes</div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">1</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Elsa Princess Rosette Chiffon Cake</div>
+          <div class="brochure-item-price">$85</div>
+        </div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">2</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Ocean Coral & Shell Cake</div>
+          <div class="brochure-item-price">$88</div>
+        </div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">3</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Under-the-Sea 2-Tier Kingdom Cake</div>
+          <div class="brochure-item-price">$135</div>
+        </div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">4</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Magical Pastel Unicorn Chiffon Cake</div>
+          <div class="brochure-item-price">$78</div>
+        </div>
+
+        <div class="brochure-preview-category" style="margin-top:24px;">☁️ Signature Cloud Chiffons</div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">5</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Strawberry Cloud Chiffon Cake</div>
+          <div class="brochure-item-price">$66</div>
+        </div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">6</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Uji Matcha & Yuzu Curd Chiffon</div>
+          <div class="brochure-item-price">$68</div>
+        </div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">7</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Pistachio Raspberry Bloom</div>
+          <div class="brochure-item-price">$72</div>
+        </div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">8</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Rose & Lychee Cloud Chiffon</div>
+          <div class="brochure-item-price">$67</div>
+        </div>
+
+        <div class="brochure-preview-category" style="margin-top:24px;">🎁 Cheesecakes & Gift Sets</div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">9</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Basque Burnt Cheesecake</div>
+          <div class="brochure-item-price">$64</div>
+        </div>
+        <div class="brochure-item" onclick="orderNow()">
+          <div class="brochure-item-num">10</div>
+          <div class="brochure-item-name" style="color:var(--text-dark);">Korean Mini Bento Gift Box (×3)</div>
+          <div class="brochure-item-price">$48</div>
+        </div>
+      </div>
+
+      <div style="text-align:center; padding:28px 32px 32px; border-top:1px dashed var(--border); margin-top:24px;">
+        <p style="font-family:var(--font-serif); font-style:italic; color:var(--text-mid); font-size:1rem; margin-bottom:16px;">All cakes made fresh to order ♡</p>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a href="https://forms.gle/afgwnnXkwxGztrP8A" target="_blank" class="btn btn-gold" style="font-size:0.85rem; padding:11px 22px;">
+            <i class="fa-solid fa-pen-to-square"></i> Place Custom Order
+          </a>
+          <button class="btn btn-navy" onclick="downloadBrochure()" style="font-size:0.85rem; padding:11px 22px;">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Brochure
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
